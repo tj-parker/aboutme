@@ -1,0 +1,10 @@
+h1 {
+    color: silver;
+    background-color: #006db0;
+    size: 64 pt;
+}
+
+p {
+    border: black;
+    border: 15 px;
+}
