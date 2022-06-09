@@ -96,7 +96,46 @@ default:
   alert('Please answer "yes" or "no" (y/n also acceptable)');
 }
 
-if (i < 5) {
+let answer6 = prompt('What is my lucky number? You get four guesses.');
+for (let count = 1; count < 4; count++) {
+  if (answer6 > 4) {
+    answer6 = prompt('Too high, guess again!');
+  } else if (answer6 < 4) {
+    answer6 = prompt('Too low, guess again!');
+  } else if (answer6 == 4) {
+    alert('Congratulations! You are correct!');
+    i++;
+    count = 4;
+  } else {
+    answer6 = prompt('Make sure you guess a number!');
+  }
+}
+
+let answer7 = prompt('Guess a state I have lived in (not counting Washington since you already know that one!)');
+let states = ['Iowa', 'Arizona', 'Michigan', 'Florida', 'Tennessee', 'Ohio'];
+
+for (let j = 1; j < 6; j++) {
+  let k = 0;
+  while (k <= 5) {
+    if (answer7 === states[k]) {
+      alert('That\'s correct!, I lived in Iowa, Arizona, Michigan, Florida, Tennessee, and Ohio!');
+      i++;
+      j = 6;
+      break;
+    } else if (answer7 !== states[k]) {
+      k++;
+    }
+  }
+  if (answer7 !== states[k]) {
+    answer7 = prompt('That\'s incorrect, try again');
+  }
+}
+if (i === 7) {
+  alert('You scored: ' + i + ' points! A perfect score!');
+} else {
+  alert('You scored: ' + i + ' points! Better luck next time!');
+}
+/*if (i < 5) {
   //console.log('Sorry ' + user + ', you didn\'t end up getting them all right. Feel free to try again!');
   alert('Sorry ' + user + ', you didn\'t end up getting them all right. Feel free to try again!');
 }
@@ -104,3 +143,4 @@ else {
   //console.log('Good job ' + user + '! As a reward you receive: positive reinforcement! Keep up the great work!');
   alert('Good job ' + user + '! As a reward you receive: positive reinforcement! Keep up the great work!');
 }
+*/

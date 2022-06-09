@@ -9,9 +9,7 @@ Assignment for Code 201 to create a personal profile page with a guessing game.
 ### Links and Resources
 
 * [Eric Meyer's reset.css file](https://meyerweb.com/eric/tools/css/reset/)
-* Any Links you used as reference
 
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* Lab 03 updates: added 6th and 7th questions, arrays are really confusing
